@@ -68,10 +68,11 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /* This ensures your text stays readable against the image */
-    background-color: rgba(0, 0, 0, 0.6); 
-    background-blend-mode: darken;
+    /* Removed blend-mode for better clarity */
+    background-color: rgba(0, 0, 0, 0.3); /* Lighter overlay (0.3 instead of 0.6) */
     color: #ffffff;
+    font-size: var(--scale-1);
+    line-height: 1.6;
 }
 /* Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– */

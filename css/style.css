@@ -65,11 +65,17 @@ h1 {
     backdrop-filter: blur(8px);      
     -webkit-backdrop-filter: blur(8px);
     
+    
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.75rem;
     cursor: pointer;
     transition: all 0.3s ease;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    backface-visibility: hidden; /* Tells the browser to treat this as a solid layer */
+    transform: translateZ(0);
 }
 
 .button:hover {

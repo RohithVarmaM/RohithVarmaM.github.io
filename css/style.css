@@ -68,8 +68,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /* Removed blend-mode for better clarity */
-    background-color: rgba(0, 0, 0, 0.3); /* Lighter overlay (0.3 instead of 0.6) */
+    /* Remove the blend mode and use a much lighter transparent overlay */
+    background-color: rgba(0, 0, 0, 0.1); 
     color: #ffffff;
     font-size: var(--scale-1);
     line-height: 1.6;

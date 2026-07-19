@@ -49,6 +49,8 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);    
 }
 
+/* Buttons 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button, button {
     display: inline-flex;
     align-items: center;
@@ -61,29 +63,34 @@ h1 {
     font-size: 1.25rem;
     font-weight: 700;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(8px);      
-    -webkit-backdrop-filter: blur(8px);
-    
-    
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 0.75rem;
     cursor: pointer;
-    transition: all 0.3s ease;
-
+    
+    /* Frosted glass background */
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    backface-visibility: hidden; /* Tells the browser to treat this as a solid layer */
+    
+    /* Clean border and premium shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+    /* Fix for rendering artifacts and glitches */
+    backface-visibility: hidden;
     transform: translateZ(0);
+    transition: all 0.3s ease;
 }
 
 .button:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(12px);      /* More blur on hover */
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
 
+/* Icons 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
     width: 1.5rem;
     height: 1.5rem;
